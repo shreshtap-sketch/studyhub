@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="theme-color" content="#101a32">
+
+  <title>StudyHub — Learn, create, share</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <header class="topbar">
+
+    <a class="brand" href="#" data-page="home">
+
+      <span class="brand-mark">✦</span>
+
+      <span>StudyHub</span>
+
+    </a>
+
+    <p class="top-note">Show your talent. Find your people.</p>
+
+    <div class="top-actions">
+
+      <span class="top-tag">Learn, Create, Share</span>
+
+      <button class="btn btn-gold btn-small" id="accountBtn">Sign in</button>
+
+    </div>
+
+  </header>
+
+  <div class="app-shell">
+
+    <aside class="sidebar">
+
+      <div class="side-label">YOUR SPACE</div>
+
+      <nav id="sideNav">
+
+        <button class="nav-link active" data-page="home"><span>⌂</span> Home</button>
+
+        <button class="nav-link" data-page="discover"><span>◎</span> Discover</button>
+
+        <button class="nav-link" data-page="languages"><span>文</span> Languages</button>
+
+        <button class="nav-link" data-page="hobbies"><span>♡</span> Hobbies</button>
+
+        <button class="nav-link" data-page="challenges"><span>✧</span> Challenges</button>
+
+        <button class="nav-link" data-page="progress"><span>↗️</span> My Progress</button>
+
+        <button class="nav-link" data-page="projects"><span>▤</span> Projects</button>
+
+        <button class="nav-link" data-page="awards"><span>★</span> Spotlight Awards</button>
+
+        <button class="nav-link" data-page="profile"><span>◉</span> My Profile</button>
+
+      </nav>
+
+      <div class="sidebar-bottom">
+
+        <div class="mini-card">
+
+          <span class="mini-star">✦</span>
+
+          <strong>Small steps add up.</strong>
+
+          <p>Explore something new today.</p>
+
+        </div>
+
+        <span class="side-foot">STUDYHUB · LEARNING COMMUNITY</span>
+
+      </div>
+
+    </aside>
+
+    <main class="main-content">
+
+      <div class="mobile-nav-wrap">
+
+        <select id="mobileNav" aria-label="Navigate">
+
+          <option value="home">Home</option>
+
+          <option value="discover">Discover</option>
+
+          <option value="languages">Languages</option>
+
+          <option value="hobbies">Hobbies</option>
+
+          <option value="challenges">Challenges</option>
+
+          <option value="progress">My Progress</option>
+
+          <option value="projects">Projects</option>
+
+          <option value="awards">Spotlight Awards</option>
+
+          <option value="profile">My Profile</option>
+
+        </select>
+
+      </div>
+
+      <div id="app"></div>
+
+      <footer class="footer">
+
+        StudyHub <span>·</span> Learn at your own pace, celebrate what you create.
+
+      </footer>
+
+    </main>
+
+  </div>
+
+  <dialog id="accountDialog" class="modal">
+
+    <form method="dialog" class="modal-card" id="accountForm">
+
+      <button class="modal-close" value="cancel" aria-label="Close">×</button>
+
+      <p class="eyebrow">YOUR STUDYHUB ACCOUNT</p>
+
+      <h2>Welcome in.</h2>
+
+      <p class="muted">This demo saves your profile on this device only.</p>
+
+      <label>Your name
+
+        <input id="accountName" placeholder="Enter your name" maxlength="35">
+
+      </label>
+
+      <label>Short bio
+
+        <input id="accountBio" placeholder="A little about you" maxlength="100">
+
+      </label>
+
+      <button class="btn btn-primary" id="saveAccount" value="default">Save profile</button>
+
+    </form>
+
+  </dialog>
+
+  <dialog id="detailDialog" class="modal">
+
+    <div class="modal-card" id="detailContent">
+
+      <button class="modal-close" id="closeDetail">×</button>
+
+    </div>
+
+  </dialog>
+
+  <div id="toast" class="toast" role="status"></div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
